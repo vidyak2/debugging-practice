@@ -13,7 +13,8 @@ input {
   margin: 0.5rem;
 }
 
-input[type="text"], label {
+input[type="text"],
+label {
   display: block;
 }
 
@@ -22,12 +23,15 @@ button {
 }
 
 h3 {
-  padding-top: 1;
+  /* Correction of unit in padding-top */
+  padding-top: 1rem;
   margin-top: 3rem;
-  border-top: solid 1px maron;
+  /* Correct color name */
+  border-top: solid 1px maroon;
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
   background-color: gold;
   color: maroon;
   padding: 0.5rem;
