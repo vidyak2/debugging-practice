@@ -35,7 +35,7 @@ window.onload = function () {
 // clears content in form fields, prints courseList objects to the page.
 // BUGFIX: This function isn't working properly- nothing gets output to the list on form submit
 function addACourse() {
-  //When the answer and the console log keeps refreshing and you can't see in the console, tht means you forgot event.preventDefault
+  //When the answer and the console log keeps refreshing and you can't see in the console, that means you forgot event.preventDefault
   event.preventDefault()
 
   //The elements with the value of grade at taken from the form
@@ -117,7 +117,6 @@ function outputList() {
 
   for (var i = 0; i < courseList.length; i++) {
     console.log("name: ", courseList[i].name, "grade: ", courseList[i].grade)
-
 
     var newLi = document.createElement("li")
     newLi.innerHTML = "name: " + courseList[i].name + " grade: " + courseList[i].grade
