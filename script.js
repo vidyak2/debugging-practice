@@ -117,13 +117,11 @@ function outputList() {
 
   for (var i = 0; i < courseList.length; i++) {
     console.log("name: ", courseList[i].name, "grade: ", courseList[i].grade)
+
+
+    var newLi = document.createElement("li")
+    newLi.innerHTML = "name: " + courseList[i].name + " grade: " + courseList[i].grade
+
+    list.appendChild(newLi)
   }
-
-
-  //THIS DOES NOT WORK
-  var newLi = document.createElement("li")
-  newLi.innerHTML = "name: " + courseList[i].name + " grade: " + courseList[i].grade
-
-  list.appendChild(newLi)
-
 }
